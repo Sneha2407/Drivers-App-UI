@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:havana_ui/screens/common_home.dart';
 
 import '../home.dart';
 
@@ -41,7 +42,7 @@ class _ResetLognState extends State<ResetLogn> {
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => const HomePage()),
+                            MaterialPageRoute(builder: (context) => const CommonNavScreen()),
                           );
                         },
                      ),

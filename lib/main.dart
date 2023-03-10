@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:havana_ui/screens/login_page.dart';
 
 void main() {
@@ -21,7 +22,9 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           
           primarySwatch: Colors.blue,
-        ),
+           textTheme: GoogleFonts.poppinsTextTheme(
+      Theme.of(context).textTheme,
+    ),),
         home: const LoginPage(),
       );}
     );}
