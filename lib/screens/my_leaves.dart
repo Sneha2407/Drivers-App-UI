@@ -21,7 +21,10 @@ class _LeavePagwState extends State<LeavePagw> {
         centerTitle: true,
         backgroundColor: Color(0xff000048),
         leading:
-          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back), ),
+          IconButton(onPressed: (){
+            //navigate to previous screen
+            Navigator.pop(context);
+          }, icon: Icon(Icons.arrow_back), ),
       ),
 
       body: Padding(
